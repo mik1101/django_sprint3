@@ -43,8 +43,8 @@ class Post(Publichinfo):
     )
 
     author = models.ForeignKey(
-        get_user_model(), 
-        on_delete=models.CASCADE, 
+        get_user_model(),
+        on_delete=models.CASCADE,
         verbose_name="Автор публикации"
     )
 
@@ -57,9 +57,9 @@ class Post(Publichinfo):
     )
 
     category = models.ForeignKey(
-        Category, 
-        on_delete=models.SET_NULL, 
-        null=True, 
+        Category,
+        on_delete=models.SET_NULL,
+        null=True,
         verbose_name="Категория"
     )
 
